@@ -57,7 +57,7 @@ def main():
 
     if uploaded_file is not None:
         # Display input image
-        st.image(uploaded_file, caption="Input Image", use_column_width=True)
+        st.image(uploaded_file, caption="Input Image", use_container_width=True)
 
         # Save uploaded file to a temporary path
         img_path = "temp_image.jpg"
@@ -73,7 +73,7 @@ def main():
         # Annotate Image
         st.write("Annotating Image...")
         annotated_image = annotate_image(img_path, results)
-        st.image(annotated_image, caption="Annotated Image", use_column_width=True)
+        st.image(annotated_image, caption="Annotated Image", use_container_width=True)
 
         # Save recognized text
         text_file = os.path.join("output", "recognized_text.txt")
