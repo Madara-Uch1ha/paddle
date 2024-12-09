@@ -1,0 +1,6 @@
+paddlepaddle
+paddleocr
+matplotlib
+pillow
+groq
+python-dotenv
