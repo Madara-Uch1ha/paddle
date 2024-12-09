@@ -4,3 +4,4 @@ matplotlib
 pillow
 groq
 python-dotenv
+streamlit
