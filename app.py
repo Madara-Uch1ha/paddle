@@ -38,7 +38,7 @@ def query_groq(recognized_text, user_prompt):
     final_prompt = f"{recognized_text}\n\n{user_prompt}"
     chat_completion = client.chat.completions.create(
         messages=[{"role": "user", "content": final_prompt}],
-        model="llama-3.2-3b-preview",
+        model="llama-3.3-70b-specdec",
     )
     return chat_completion.choices[0].message.content
 
